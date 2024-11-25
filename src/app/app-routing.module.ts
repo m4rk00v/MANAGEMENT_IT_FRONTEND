@@ -9,9 +9,11 @@ import { MonitoringComponent } from './pages/monitoring/monitoring.component';
 import { DemographicComponent } from './pages/demographic/demographic.component';
 import { ApplicationComponent } from './pages/application/application.component';
 import { DocumentationComponent } from './pages/documentation/documentation.component';
+import { LandingPageComponent } from './pages/frontoffice/landing-page/landing-page.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: LandingPageComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'admin/bills', component: BillComponent },
   { path: 'admin/applications', component: ApplicationComponent },
   { path: 'admin/monitoring', component: MonitoringComponent },

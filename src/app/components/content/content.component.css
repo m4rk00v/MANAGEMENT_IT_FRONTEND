@@ -1,0 +1,58 @@
+.relative {
+    position: relative;
+  }
+  
+  .overflow-hidden {
+    overflow: hidden;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .flex-shrink-0 {
+    flex-shrink: 0;
+  }
+  
+
+  
+  .px-2 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  
+  .object-contain {
+    object-fit: contain;
+  }
+  
+  .transition-transform {
+    transition: transform 1s linear;
+  }
+  
+  .duration-1000 {
+    transition-duration: 1000ms;
+  }
+  
+  .ease-linear {
+    transition-timing-function: linear;
+  }
+
+  .transition-transform {
+    transition: transform 1s ease-in-out;
+  }
+
+
+  footer {
+    position: fixed; /* Se fija al fondo de la pantalla */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Abarca todo el ancho */
+    background-color: #fff; /* Cambia el color según tu diseño */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    text-align: center; /* Centra el contenido */
+    padding: 10px 20px;
+    z-index: 1000; /* Se asegura de estar sobre otros elementos */
+}
+
+  
+  

@@ -6,7 +6,9 @@ import { DashboardService } from '../../dashboard.service';
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.css'],
 })
+
 export class SidebarComponent {
+  
   @Input() mobileOrientation: 'start' | 'end';
   styles: {
     start: string;

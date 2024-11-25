@@ -4,3 +4,13 @@
 
 
 /* You can add global styles to this file, and also import other style files */
+
+@media (min-width: 1024px) {
+    .lg\:pl-24 {
+        padding-left: 0!important;
+    }
+}
+
+.max-w-screen-xl {
+    max-width: None!important;
+}

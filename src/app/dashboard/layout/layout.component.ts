@@ -7,6 +7,7 @@ import { DashboardService } from '../dashboard.service';
   templateUrl: './layout.component.html',
 })
 export class LayoutComponent implements OnInit {
+  isLogged: false = false;
   constructor(private router: Router, private dashboard: DashboardService) {
     this.router.events.subscribe((event: Event) => {
       this.dashboard.setCurrentRoute(this.router.url);

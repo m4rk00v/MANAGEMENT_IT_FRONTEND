@@ -38,6 +38,7 @@ import { ContentComponent } from './components/content/content.component';
 import { SnippetComponent } from './components/docs/snippet/snippet.component';
 import { FolderIconComponent } from './components/docs/icons/folder-icon/folder-icon.component';
 import { AngularIconComponent } from './components/docs/icons/angular-icon/angular-icon.component';
+import { LandingPageComponent } from './pages/frontoffice/landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +62,7 @@ import { AngularIconComponent } from './components/docs/icons/angular-icon/angul
     ApplicationComponent,
     DemographicComponent,
     DocumentationComponent,
+    LandingPageComponent,
 
     // icons
     DocIconComponent,
@@ -77,6 +79,7 @@ import { AngularIconComponent } from './components/docs/icons/angular-icon/angul
     ContentComponent,
     FolderIconComponent,
     AngularIconComponent,
+    LandingPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
