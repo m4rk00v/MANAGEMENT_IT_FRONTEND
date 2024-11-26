@@ -10,6 +10,7 @@ import { DemographicComponent } from './pages/demographic/demographic.component'
 import { ApplicationComponent } from './pages/application/application.component';
 import { DocumentationComponent } from './pages/documentation/documentation.component';
 import { LandingPageComponent } from './pages/frontoffice/landing-page/landing-page.component';
+import { PopUpLoginComponent } from './pages/frontoffice/pop-up-login/pop-up-login.component';
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent },
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'admin/analytics', component: AnalyticComponent },
   { path: 'admin/settings', component: SettingsComponent },
   { path: 'admin/documentation', component: DocumentationComponent },
+  { path: 'popup', component: PopUpLoginComponent },
 ];
 
 @NgModule({

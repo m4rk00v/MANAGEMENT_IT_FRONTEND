@@ -40,6 +40,26 @@ import { FolderIconComponent } from './components/docs/icons/folder-icon/folder-
 import { AngularIconComponent } from './components/docs/icons/angular-icon/angular-icon.component';
 import { LandingPageComponent } from './pages/frontoffice/landing-page/landing-page.component';
 
+import { MAT_DIALOG_DATA, MatDialogModule, MatDialogRef } from '@angular/material/dialog';
+
+
+
+
+import {ChangeDetectionStrategy, Component, inject} from '@angular/core';
+import {FormsModule} from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
+import {
+
+  MatDialogTitle,
+  MatDialogContent,
+  MatDialogActions,
+  MatDialogClose,
+} from '@angular/material/dialog';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { PopUpLoginComponent } from './pages/frontoffice/pop-up-login/pop-up-login.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,6 +83,7 @@ import { LandingPageComponent } from './pages/frontoffice/landing-page/landing-p
     DemographicComponent,
     DocumentationComponent,
     LandingPageComponent,
+   
 
     // icons
     DocIconComponent,
@@ -79,10 +100,13 @@ import { LandingPageComponent } from './pages/frontoffice/landing-page/landing-p
     ContentComponent,
     FolderIconComponent,
     AngularIconComponent,
-    LandingPageComponent,
+    LandingPageComponent
+    
   ],
-  imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  imports: [BrowserModule, AppRoutingModule,MatDialogModule],
+  providers: [ { provide: MAT_DIALOG_DATA, useValue: {} },
+    
+    { provide: MatDialogRef, useValue: {}}],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
